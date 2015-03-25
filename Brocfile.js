@@ -21,8 +21,40 @@ var app = new EmberApp();
 
 // Bootstrap 3.3.2 -->
 app.import('bower_components/admin-lte/bootstrap/css//bootstrap.min.css');
+app.import('bower_components/admin-lte/bootstrap/fonts/glyphicons-halflings-regular.eot', {
+  destDir: 'fonts'
+});
+app.import('bower_components/admin-lte/bootstrap/fonts/glyphicons-halflings-regular.ttf', {
+  destDir: 'fonts'
+});
+app.import('bower_components/admin-lte/bootstrap/fonts/glyphicons-halflings-regular.svg', {
+  destDir: 'fonts'
+});
+app.import('bower_components/admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff', {
+  destDir: 'fonts'
+});
+app.import('bower_components/admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff2', {
+  destDir: 'fonts'
+});
+
 // FontAwesome 4.3.0 -->
 app.import('bower_components/font-awesome/css/font-awesome.min.css');
+app.import('bower_components/font-awesome/fonts/fontawesome-webfont.eot', {
+  destDir: 'fonts'
+});
+app.import('bower_components/font-awesome/fonts/fontawesome-webfont.ttf', {
+  destDir: 'fonts'
+});
+app.import('bower_components/font-awesome/fonts/fontawesome-webfont.svg', {
+  destDir: 'fonts'
+});
+app.import('bower_components/font-awesome/fonts/fontawesome-webfont.woff', {
+  destDir: 'fonts'
+});
+app.import('bower_components/font-awesome/fonts/fontawesome-webfont.woff2', {
+  destDir: 'fonts'
+});
+
 // Ionicons 2.0.0 -->
 app.import('bower_components/ionicons/css/ionicons.css');
 // Theme style -->

@@ -1,0 +1,13 @@
+<section class="content-header">
+    <h1>
+        {{header}}
+        <small>{{headerSmall}}</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="javascript:void(0)"><i class="fa fa-dashboard"></i> Home</a></li>
+        {{#each crumb in crumbs}}
+            <li><a href="javascript:void(0)"><i class="fa"></i> {{crumb.title}}</a></li>
+        {{/each}}
+        <!--<li class="active">Dashboard</li>-->
+    </ol>
+</section>
