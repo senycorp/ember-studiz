@@ -1,9 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  /**
+   * Template: Variables
+   */
   appName: 'Studiz',
-  header: 'ExampleHeader',
-  headerSmall: 'asdasd',
+  header: '',
+  headerSmall: '',
+
+  /**
+   * Breadcrump partials
+   */
   crumbs: [
     {title: "Test", icon: "fa-dashboard"}
   ]

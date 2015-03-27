@@ -1,0 +1,28 @@
+<button class="btn btn-block btn-primary" {{action 'showModal'}}> New Semester</button>
+<hr/>
+<div class="list-group">
+    {{#each semester in controller itemController="semester"}}
+        <a href="javascript:void(0)" class="list-group-item" {{action 'showModal' semester}}>
+            <span class="glyphicon"></span> {{semester.title}}
+            <br/>
+            <i>{{semester.start}}</i> - <i>{{semester.end}}</i>
+        </a>
+    {{/each}}
+</div>
+
+{{#bs-modal submit="saveSemester" dismiss="rollbackSemester" title="Create Semester" indicator=modalIndicator model=modalModel}}
+  <form>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          {{input type="text" class="form-control" placeholder="Title..." value=modalModel.title }}
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Start</label>
+          {{input type="text" class="form-control" placeholder="Start..." value=modalModel.start }}
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">End</label>
+        {{input type="text" class="form-control" placeholder="End..." value=modalModel.end }}
+      </div>
+  </form>
+{{/bs-modal}}

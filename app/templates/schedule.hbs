@@ -1,0 +1,47 @@
+<div class="row paddingless">
+    <div class="col-md-3">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <i class="fa fa-warning"></i>
+                <h3 class="box-title">Semesters</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+              {{render 'semesters' model.semesters}}
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+    <div class="col-md-3">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <i class="fa fa-warning"></i>
+                <h3 class="box-title">Subjects</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+              {{render 'subjects' model.subjects}}
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+    <div class="col-md-3">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <i class="fa fa-warning"></i>
+                <h3 class="box-title">Classes</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+              {{render 'classes' model.classes}}
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+    <div class="col-md-3">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <i class="fa fa-warning"></i>
+                <h3 class="box-title">Alerts</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+              Empty
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+</div>
+{{outlet}}

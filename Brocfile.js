@@ -1,6 +1,8 @@
 /* global require, module */
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var mergeTrees = require('broccoli-merge-trees');
+var pickFiles = require('broccoli-static-compiler');
 
 var app = new EmberApp();
 
@@ -76,7 +78,7 @@ app.import('bower_components/admin-lte/plugins/bootstrap-wysihtml5/bootstrap3-wy
 
 
 // jQuery 2.1.3 -->
-app.import('bower_components/admin-lte/plugins/jQuery/jQuery-2.1.3.min.js');
+//app.import('bower_components/admin-lte/plugins/jQuery/jQuery-2.1.3.min.js');
 // jQuery UI 1.11.2 -->
 app.import('bower_components/jquery-ui/jquery-ui.min.js');
 // Bootstrap 3.3.2 JS -->
@@ -107,10 +109,16 @@ app.import('bower_components/admin-lte/plugins/fastclick/fastclick.min.js');
 app.import('bower_components/admin-lte/dist/js/app.min.js');
 
 // AdminLTE dashboard demo (This is only for demo purposes) -->
-app.import('bower_components/admin-lte/dist/js/pages/dashboard.js');
+//app.import('bower_components/admin-lte/dist/js/pages/dashboard.js');
+
+/*var extraAssets = pickFiles('bower_components/admin-lte/dist/img', {
+      srcDir: '/',
+      destDir: '/img'
+ });*/
 
 // AdminLTE for demo purposes -->
-app.import('bower_components/admin-lte/dist/js/demo.js');
+//app.import('bower_components/admin-lte/dist/js/demo.js');
+//module.exports = app.toTree(extraAssets);
 
 
 module.exports = app.toTree();
